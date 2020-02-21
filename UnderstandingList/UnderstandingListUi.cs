@@ -31,6 +31,7 @@ namespace UnderstandingList
 
         private void ShowButton_Click(object sender, EventArgs e)
         {
+            message = "";
             foreach(int number in numbers)
             {
                 message = message + number + " ";
@@ -97,7 +98,60 @@ namespace UnderstandingList
 
         private void DuplicateButton_Click(object sender, EventArgs e)
         {
-          
+            int totalDuplicate = 0;
+            foreach (int number in numbers)
+            {
+                
+                int count = -1;
+                for(int index=0; index<numbers.Count; index++)
+                {
+                    if (numbers[index] == number)
+                    {
+                        count++;
+                    }
+                }
+                if (count > 1)
+                {
+                    totalDuplicate = totalDuplicate + count;
+                }
+            }
+            displayRichTextBox.Text = AllElement("All elements are: ", numbers) + "\nTotal Duplicate Found: " + totalDuplicate;
+        }
+
+        private void MaxMinButton_Click(object sender, EventArgs e)
+        {
+            displayRichTextBox.Text = AllElement("All elements are: ", numbers) + "\nMaximum Element: " + numbers.Max() + "\nMinimum Element: " + numbers.Min();
+        }
+
+        private void OddEvenButton_Click(object sender, EventArgs e)
+        {
+            List<int> oddNumbers = new List<int>();
+            List<int> evenNumbers = new List<int>();
+            foreach(int number in numbers)
+            {
+                if (number % 2 == 0)
+                {
+                    evenNumbers.Add(number);
+                }else if (number % 2 == 1)
+                {
+                    oddNumbers.Add(number);
+                }
+            }
+            displayRichTextBox.Text = AllElement("All Elements are: ", numbers) + AllElement("\nOdd Numbers are: ", oddNumbers) + AllElement("\nEven Numbers are: ", evenNumbers);
+        }
+
+        private void AscendingSortButton_Click(object sender, EventArgs e)
+        {
+            
+            numbers.Sort();
+            displayRichTextBox.Text = AllElement("All Elements are: ", numbers);
+        }
+
+        private void DescendingSortButton_Click(object sender, EventArgs e)
+        {
+            numbers.Sort();
+            numbers.Reverse();
+            displayRichTextBox.Text = AllElement("All Elements are: ", numbers);
         }
     }
 }

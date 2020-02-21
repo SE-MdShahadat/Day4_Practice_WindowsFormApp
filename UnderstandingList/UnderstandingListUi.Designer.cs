@@ -53,6 +53,7 @@
             this.DescendingSortButton.TabIndex = 30;
             this.DescendingSortButton.Text = "Sort-Des";
             this.DescendingSortButton.UseVisualStyleBackColor = true;
+            this.DescendingSortButton.Click += new System.EventHandler(this.DescendingSortButton_Click);
             // 
             // InsertButton
             // 
@@ -71,6 +72,7 @@
             this.AscendingSortButton.TabIndex = 28;
             this.AscendingSortButton.Text = "Sort-Asc";
             this.AscendingSortButton.UseVisualStyleBackColor = true;
+            this.AscendingSortButton.Click += new System.EventHandler(this.AscendingSortButton_Click);
             // 
             // OddEvenButton
             // 
@@ -80,6 +82,7 @@
             this.OddEvenButton.TabIndex = 27;
             this.OddEvenButton.Text = "Odd-Even";
             this.OddEvenButton.UseVisualStyleBackColor = true;
+            this.OddEvenButton.Click += new System.EventHandler(this.OddEvenButton_Click);
             // 
             // MaxMinButton
             // 
@@ -89,6 +92,7 @@
             this.MaxMinButton.TabIndex = 26;
             this.MaxMinButton.Text = "Max-Min";
             this.MaxMinButton.UseVisualStyleBackColor = true;
+            this.MaxMinButton.Click += new System.EventHandler(this.MaxMinButton_Click);
             // 
             // UniqueButton
             // 

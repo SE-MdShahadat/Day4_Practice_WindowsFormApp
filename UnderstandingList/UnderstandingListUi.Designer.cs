@@ -98,6 +98,7 @@
             this.UniqueButton.TabIndex = 25;
             this.UniqueButton.Text = "Unique";
             this.UniqueButton.UseVisualStyleBackColor = true;
+            this.UniqueButton.Click += new System.EventHandler(this.UniqueButton_Click);
             // 
             // DuplicateButton
             // 
@@ -107,6 +108,7 @@
             this.DuplicateButton.TabIndex = 24;
             this.DuplicateButton.Text = "Duplicate";
             this.DuplicateButton.UseVisualStyleBackColor = true;
+            this.DuplicateButton.Click += new System.EventHandler(this.DuplicateButton_Click);
             // 
             // CopyButton
             // 
@@ -116,6 +118,7 @@
             this.CopyButton.TabIndex = 23;
             this.CopyButton.Text = "Copy";
             this.CopyButton.UseVisualStyleBackColor = true;
+            this.CopyButton.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // SumButton
             // 
@@ -125,6 +128,7 @@
             this.SumButton.TabIndex = 22;
             this.SumButton.Text = "Sum";
             this.SumButton.UseVisualStyleBackColor = true;
+            this.SumButton.Click += new System.EventHandler(this.SumButton_Click);
             // 
             // ReverseButton
             // 
@@ -134,6 +138,7 @@
             this.ReverseButton.TabIndex = 21;
             this.ReverseButton.Text = "Reverse";
             this.ReverseButton.UseVisualStyleBackColor = true;
+            this.ReverseButton.Click += new System.EventHandler(this.ReverseButton_Click);
             // 
             // label2
             // 
